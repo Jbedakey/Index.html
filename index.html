@@ -1,54 +1,172 @@
-```html
-<body>
-    <img src="https://images.unsplash.com/photo-1581577002636-cb29f4adde6d?auto=format&fit=crop&w=1600&q=80" alt="Ramenwassen" style="width:100%; max-width:100%; border-radius:10px; margin-bottom:20px;">
 
-    <h1>Welkom bij Ramenwasser Pro!</h1>
-    ...
-</body>
-```
+          WOW, mooie inspiratie! 👏  
+Je link: [https://glazenwasser-online.nl/](https://glazenwasser-online.nl/) is een **goed gemaakte website** van een ramenwasser — professioneel, duidelijk en gebruiksvriendelijk.
+
+En jij wil iets **zelfde maar nog mooier** → dat kunnen we zeker doen! 🚀
 
 ---
+
+## 💡 Wat willen we bereiken?
+
+Jouw doel:
+- Een **professionele website** voor jouw ramenwasservice
+- Mooie foto’s
+- Duidelijke diensten
+- Offerteknop of contactmogelijkheid
+- Modern design (zoals op de site die je liet zien)
+
+---
+
+## ✨ Wat gaan we aanpassen of toevoegen?
+
+Hier zijn de stappen om jouw website te maken zoals je wilt:
+
+### 1. 🎨 Nieuwe lay-out met headerfoto + titel
+Net als op de inspiratiewebsite, maar dan **jouw eigen stijl**
+
+### 2. 📷 Foto's van jouw werk (of stockfoto’s)
+Als je geen eigen foto’s hebt, gebruiken we mooie stockfoto’s
+
+### 3. 📄 Secties: Diensten, Over Mij, Contact
+Zo wordt jouw site overzichtelijk én professioneel
+
+### 4. 📞 Contactgegevens of formulier
+Bijvoorbeeld: telefoonnummer, e-mail, WhatsApp-knop
+
+### 5. 🧾 Offerte-aanvraagknop
+Zodat klanten direct kunnen reageren
+
+---
+
+## 🔧 Wat ik nu voor je ga doen
+
+Ik geef je een **volledige HTML-code**, inclusief:
+
+✅ Headerfoto  
+✅ Titel & korte introductie  
+✅ Sectie "Diensten"  
+✅ Sectie "Over Mij"  
+✅ Contactknop / offerteknop  
+
+> Je hoeft hem alleen maar te kopiëren en plakken in GitHub.
+
+---
+
+## 📝 Volledige HTML-code – kopieer deze naar jouw `index.html`
 
 ```html
 <!DOCTYPE html>
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
-    <title>Ramenwasser Pro</title>
+    <title>Ramenwasser Pro | Jbedakey</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f0f8ff;
+            margin: 0;
+            background-color: #f9f9f9;
             color: #333;
-            padding: 40px;
-            max-width: 700px;
+            line-height: 1.6;
+        }
+
+        header {
+            background: url('https://images.unsplash.com/photo-1581577002636-cb29f4adde6d?auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 120px 20px 80px;
+            position: relative;
+        }
+
+        header::after {
+            content: "";
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: rgba(0,0,0,0.5);
+            z-index: 1;
+        }
+
+        header * {
+            position: relative;
+            z-index: 2;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+
+        .container {
+            max-width: 900px;
             margin: auto;
+            padding: 40px 20px;
+            background: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.05);
+            border-radius: 10px;
+            margin-top: -60px;
         }
-        h1 {
-            color: #2c3e50;
-        }
+
         .button {
             display: inline-block;
             background-color: #27ae60;
             color: white;
-            padding: 10px 20px;
+            padding: 12px 24px;
             text-decoration: none;
             border-radius: 5px;
+            margin-top: 20px;
+            transition: 0.3s;
+        }
+
+        .button:hover {
+            background-color: #218c52;
+        }
+
+        section {
+            margin-bottom: 40px;
         }
     </style>
 </head>
 <body>
-    <h1>Welkom bij Ramenwasser Pro!</h1>
-    <p>We wassen ramen beter dan wie dan ook. Betrouwbaar, snel en betaalbaar.</p>
 
-    <h2>Diensten</h2>
-    <ul>
-        <li>Woningen</li>
-        <li>Kantoren</li>
-        <li>Grote gebouwen</li>
-    </ul>
+<header>
+    <h1>Jbedakey Ramenwassen</h1>
+    <p>Schoon glas, helder uitzicht – sinds 2025!</p>
+</header>
 
-    <a href="mailto:jouw@email.nl" class="button">Vraag vrijblijvend offerte aan</a>
+<div class="container">
+
+    <section>
+        <h2>Onze diensten</h2>
+        <ul>
+            <li>✔ Professioneel ramenwassen woningen</li>
+            <li>✔ Kantoren & bedrijfspanden</li>
+            <li>✔ Grote gebouwen & industriële objecten</li>
+            <li>✔ Regelmatig onderhoud beschikbaar</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Over mij</h2>
+        <p>
+            Ik ben Jbedakey, een ervaren ramenwasser uit Utrecht. Met jarenlange ervaring en aandacht voor detail zorg ik ervoor dat jouw ramen glimmen als nieuw.
+        </p>
+    </section>
+
+    <section>
+        <h2>Contact</h2>
+        <p>
+            Benieuwd naar een vrijblijvende offerte of meer informatie?
+        </p>
+        <a href="mailto:jouw@email.nl" class="button">Vraag nu een offerte aan</a>
+    </section>
+
+</div>
+
 </body>
 </html>
 ```
